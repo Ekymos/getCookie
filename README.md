@@ -1,0 +1,2 @@
+# getCookie
+Get value cookie
