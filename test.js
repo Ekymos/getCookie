@@ -1,3 +1,3 @@
-import { ok } from 'assert';
-import { init } from './index';
-ok(typeof init === 'function');
+// import ok from 'assert';
+const { init } = require('./index');
+// ok(typeof init === 'function');
