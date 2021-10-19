@@ -1,10 +1,10 @@
 {
   "name": "getcookievalue",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Get value cookie",
   "main": "index.js",
   "scripts": {
-    "test": "node test.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
