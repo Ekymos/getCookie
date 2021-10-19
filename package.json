@@ -1,5 +1,5 @@
 {
-  "name": "getcookie",
+  "name": "getcookievalue",
   "version": "0.1.0",
   "description": "Get value cookie",
   "main": "index.js",
