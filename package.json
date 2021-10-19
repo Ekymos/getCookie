@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Ekymos/getCookie.git"
+    "url": "git+https://github.com/Ekymos/getcookievalue.git"
   },
   "author": "Ekymos",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Ekymos/getCookie/issues"
+    "url": "https://github.com/Ekymos/getcookievalue/issues"
   },
-  "homepage": "https://github.com/Ekymos/getCookie#readme"
+  "homepage": "https://github.com/Ekymos/getcookievalue#readme"
 }
