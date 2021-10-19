@@ -1,5 +1,5 @@
 /**
- * MODULE: Get Cookie
+ * MODULE: Get Cookie value
  *
  * Necesary atrributes to make this module works:
  *
@@ -37,7 +37,7 @@ function getCookieValue(key) {
 /**
  * Function init all functions
  *
- * @param {HTMLElement} element - Element to have all data attributes options
+ * @param {HTMLElement} element - Element to have all data attributes options and values
  */
 const init = (element) => {
   const cookieData = {
