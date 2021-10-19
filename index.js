@@ -41,12 +41,8 @@ function getCookieValue(key) {
  */
 const init = (element) => {
   const cookieData = {
-    key: element.dataset.getCookieKey ?? null,
-    action: element.dataset.getCookieAction ?? null,
+    key: element.dataset.getCookieKey || null,
+    action: element.dataset.getCookieAction || null,
   };
   setValueCookie(element, getCookieValue(cookieData.key));
-};
-
-export default {
-  init
 };
