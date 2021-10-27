@@ -1,22 +1,48 @@
-const quotes = [
-  "En esta isla vivió, durante cuatro largos años, Robinson Crusoe, cuya historia no solamente fascinó y emocionó al mundo entero sino que puso en el mapa del mundo a esta isla en la cual viven ochocientas chilenas y chilenos.",
-  "Y durante nuestro Gobierno, vamos a entregar cinco nuevos ‘tiatros’ regionales en Iquique, La Serena, ‘Rancuagua’, Concepción y Punta Arenas.",
-  "Si usted maneja, no conduce.",
-  "Nunca han mirado las estrellas, la galactea o el fondo del alma? Una cosa es mirar e intentar descubrir y otra cosa ver que es lo sensorial",
-  "Marepoto",
-  "Tusunami",
-  "Es la misma bandera con que hemos ‘cubrido’ tantas veces los féretros de nuestros ‘mártis’",
-  "Ha llegado el fin de año, tiempo en que nos preguntamos, qué hicimos bien, qué hicimos mal, qué ‘podimos’ haber hecho mejor"
-];
+/**
+ * MODULE: Get Cookie value
+ *
+ * Necesary atrributes to make this module works:
+ *
+ * - data-get-cookie: it needed to be true to work.
+ * - data-get-cookie-key: name of the cookie to need.
+ *
+ */
 
 /**
- * Gets a random Quote
- * @returns {string}
+ * Function to put the value cookie into element
+ *
+ * @param {HTMLElement} ele - Element from HTML wich has data-get-cookie attribute
+ * @param {String} value - The value cookie
  */
-function randomQuote() {
-  return quotes[Math.floor(Math.random() * quotes.length)];
-}
+ function setValueCookie(ele, value) { ele.value = value; };
 
-module.exports = {
-  randomQuote
-};
+ /**
+  * Function to search and specific name cookie and get there value
+  *
+  * @param {String} key - The name of the cookie to need find
+  * @return {String} - Return the value of the cookie
+  */
+ function getCookieValue(key) {
+   const coockies = document.cookie.split(';');
+   let valueCookie = coockies;
+   if (key) {
+     each(coockies, (index) => {
+       const cookie = index.split('=');
+       if (key === cookie[0].trim()) valueCookie = decodeURIComponent(cookie[1]);
+     });
+   }
+   return valueCookie;
+ };
+ 
+ /**
+  * Function init all functions
+  *
+  * @param {HTMLElement} element - Element to have all data attributes options and values
+  */
+ const init = (element) => {
+   const cookieData = {
+     key: element.dataset.getCookieKey || null,
+     action: element.dataset.getCookieAction || null,
+   };
+   setValueCookie(element, getCookieValue(cookieData.key));
+ };
