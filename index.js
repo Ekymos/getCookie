@@ -8,7 +8,6 @@ const quotes = [
   "Es la misma bandera con que hemos ‘cubrido’ tantas veces los féretros de nuestros ‘mártis’",
   "Ha llegado el fin de año, tiempo en que nos preguntamos, qué hicimos bien, qué hicimos mal, qué ‘podimos’ haber hecho mejor"
 ];
-
 /**
  * Gets a random Piñera Quote
  * @returns {string}
@@ -16,7 +15,6 @@ const quotes = [
 function randomQuote() {
   return quotes[Math.floor(Math.random() * quotes.length)];
 }
-
 module.exports = {
   randomQuote
 };
