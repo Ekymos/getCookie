@@ -10,7 +10,7 @@ const quotes = [
 ];
 
 /**
- * Gets a random Piñera Quote
+ * Gets a random Quote
  * @returns {string}
  */
 function randomQuote() {
