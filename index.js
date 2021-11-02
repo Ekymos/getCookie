@@ -35,7 +35,7 @@
  };
  
  /**
-  * Function init all functions
+  * Function init all functions and get values
   *
   * @param {HTMLElement} element - Element to have all data attributes options and values
   */
