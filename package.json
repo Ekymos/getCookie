@@ -4,7 +4,8 @@
   "description": "Get value cookie with data attributes",
   "main": "index.js",
   "scripts": {
-    "test": "node test.js"
+    "test": "node test.js",
+    "release": "standard-version"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Ekymos/getcookievalue/issues"
   },
-  "homepage": "https://github.com/Ekymos/getcookievalue#readme"
+  "homepage": "https://github.com/Ekymos/getcookievalue#readme",
+  "devDependencies": {
+    "standard-version": "^9.3.2"
+  }
 }
