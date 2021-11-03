@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.5](https://github.com/Ekymos/getcookievalue/compare/v0.1.4...v0.1.5) (2021-11-03)
+
+
+### Bug Fixes
+
+* Add some lines to readme file ([7000c7a](https://github.com/Ekymos/getcookievalue/commit/7000c7a7fc5fec70039bc5474f5da7b55320c74c))
+
 ### [0.1.4](https://github.com/Ekymos/getcookievalue/compare/v0.1.3...v0.1.4) (2021-11-03)
 
 
