@@ -1,6 +1,6 @@
 {
   "name": "getcookievalue",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Get value cookie with data attributes",
   "main": "dist/index.js",
   "umd:main": "dist/index.umd.js",
@@ -43,8 +43,19 @@
     }
   },
   "lint-staged": {
-    "*.js": ["prettier --write", "eslint --fix", "git add"],
-    "*.{json,md}": ["prettier --write", "git add"]
+    "*.js": [
+      "prettier --write",
+      "eslint --fix",
+      "git add"
+    ],
+    "*.{json,md}": [
+      "prettier --write",
+      "git add"
+    ]
   },
-  "files": ["dist", "package.json", "README.md"]
+  "files": [
+    "dist",
+    "package.json",
+    "README.md"
+  ]
 }
